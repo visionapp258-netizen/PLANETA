@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ShoppingBag, Calendar, Users, Home, Plus, Instagram, ArrowRight, X } from 'lucide-react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 const App = () => {
   const [activeTab, setActiveTab] = useState('home');
@@ -239,6 +240,8 @@ const App = () => {
         <div className="pointer-events-auto">MAPUTO, MZ</div>
         <div className="pointer-events-auto">© 2024 PLANETA MEDIA</div>
       </footer>
+
+      <SpeedInsights />
     </div>
   );
 };
